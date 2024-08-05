@@ -64,3 +64,16 @@
     margin-bottom: 20px;
     height: 250px;;
 }
+
+
+ main{
+    background-color: #141616;
+    background-image: linear-gradient(135deg, #141616 0%, #4c4c4c 99%, #121211 100%);
+    
+}
+#Services-de-soutien{
+    background-color: transparent;
+}
+#aux{
+    background-color: transparent;
+}
