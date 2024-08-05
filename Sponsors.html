@@ -38,19 +38,26 @@
       .swiper-container {
           width: 80%;
           padding: 40px 0;
+          display: flex;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          align-content:flex-end;
       }
       .swiper-slide {
           display: flex;
           justify-content: center;
+          justify-items: center;
           align-items: center;
       }
       .swiper-slide img {
           max-width: 150px; 
-          filter: grayscale(100%);
           transition: filter 0.3s;
       }
       .swiper-slide img:hover {
           filter: none;
+          transform: scale(1.8);
+
       }
   </style>
 </head>
@@ -119,17 +126,25 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
             <!-- Repeat this block for each logo -->
-            <div class="swiper-slide"><img src="/assets\img\specials-1.png" alt="Logo 1"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-2.png" alt="Logo 2"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-3.png" alt="Logo 3"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-2.png" alt="Logo 2"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-3.png" alt="Logo 3"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-2.png" alt="Logo 2"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-3.png" alt="Logo 3"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-2.png" alt="Logo 2"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-3.png" alt="Logo 3"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-2.png" alt="Logo 2"></div>
-            <div class="swiper-slide"><img src="/assets\img\specials-3.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\EST_logo.png" alt="Logo 1"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\logo-douane.png" alt="Logo 2"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\1.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\2.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\3.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\4.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\5.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\6.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\7.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\8.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\9.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\10.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\11.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\12.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\13.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\14.png" alt="Logo 3"></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\15.png" alt="Logo 3"></div>
+
+
             <!-- Add more logos as needed -->
         </div>
     </div>
@@ -201,11 +216,11 @@
 
   <script>
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 5,  /* Number of logos visible at the same time */
+        slidesPerView: 7,  /* Number of logos visible at the same time */
         spaceBetween: 0, /* Space between logos */
         loop: true, /* Loop the slides */
         autoplay: {
-            delay: 2000, /* Delay between transitions in ms */
+            delay: 1000, /* Delay between transitions in ms */
             disableOnInteraction: false, /* Continue autoplay after interactions */
         },
         speed: 1000, /* Transition speed in ms for smoother transitions */
