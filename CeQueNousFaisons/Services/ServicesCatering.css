@@ -3,7 +3,11 @@
     flex-direction: row;
     margin: 150px 0px 150px 0px;
     position: relative;
-
+    
+    background-color: #1e1e1e; /* Dark grey for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
 }
 .card-container:first-child{
     margin: 50px 0px 150px 0px;
@@ -16,13 +20,27 @@
 
 }
 .text-container > p {
-    padding: 20px;
+    padding: 40px;
+    font-size: 1.1em;
 }
 
 .text-container > h3{
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 5px;
+    text-decoration: double;
+    color: #CDA45E;
+    font-size: 2em;
+
+
+}
+.text-container:nth-child(odd) > h3{
+    margin-left:20px ;
 
 }
 
+#ServicesCatering{
+    background-color: #141616;
+background-image: linear-gradient(135deg, #141616 0%, #4c4c4c 99%, #121211 100%);
+
+}
 
