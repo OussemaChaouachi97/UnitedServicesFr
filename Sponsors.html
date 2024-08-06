@@ -32,7 +32,53 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Custom CSS -->
- 
+ <style>
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    margin: 150px 0px 150px 0px;
+    position: relative;
+    
+    background-color: #1e1e1e; /* Dark grey for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
+}
+.card-container:first-child{
+    margin: 50px 0px 150px 0px;
+
+}
+.card-container > img {
+    width: 400px;
+    height: auto;
+    margin: 30px;
+
+}
+.text-container > p {
+    padding: 40px;
+    font-size: 1.1em;
+}
+
+.text-container > h3{
+    margin-top: 30px;
+    padding: 5px;
+    text-decoration: double;
+    color: #CDA45E;
+    font-size: 2em;
+
+
+}
+.text-container:nth-child(odd) > h3{
+    margin-left:20px ;
+
+}
+
+#ServicesCatering{
+    background-color: #141616;
+background-image: linear-gradient(135deg, #141616 0%, #4c4c4c 99%, #121211 100%);
+
+}
+ </style>
 </head>
 
 <body class="index-page">
@@ -95,8 +141,90 @@
 
   </header>
   <br><br><br><br><br><br>
-  
+  <!-- Gallery Section -->
+  <section id="ServicesCatering" >
 
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Partenariat</h2>
+      <p>United Services et le Club Sportif Oued Ellil (CSO) </p>
+    </div><!-- End Section Title -->
+
+          <div style="margin-right: 200px; margin-left: 200px;">
+              <img src="img/Sponsors/1.jfif" alt="le Club Sportif Oued Ellil" class="img-fluid" >
+            </a>
+          </div><!-- End Gallery Item -->
+
+  </section><!-- /Gallery Section -->
+
+  <section id="ServicesCatering" class="specials section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Services</h2>
+      <p>Services Catering</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" >
+      <div class="all-cards-container">
+
+          <div class="card-container" data-aos="fade-right" data-aos-delay="200">
+              <div class="text-container" >
+                  
+                  <h3>
+                    Soutien au Sport Local et à la Communauté
+                  </h3>
+                  <br>
+                  <p>
+                    Le partenariat établi entre United Services et le Club Sportif Oued Ellil (CSO) marque une étape significative dans 
+                    le soutien au sport local et à la communauté. Cette collaboration témoigne de l'engagement profond de United Services 
+                    envers le développement communautaire et l'épanouissement des jeunes talents sportifs dans la région d’Oued Ellil. 
+                    En apportant un soutien financier et matériel conséquent, United Services permet au CSO de moderniser ses infrastructures, 
+                    d'améliorer ses équipements d'entraînement, 
+                    et d’offrir aux jeunes athlètes des conditions optimales pour leur progression.
+                  </p>
+              </div>
+              <img src="img/Sponsors/4.jfif" >
+          </div>
+          <div class="card-container" data-aos="fade-left" data-aos-delay="200">
+              <img src="img/Sponsors/2.jfif">
+              <div class="text-container">
+                  
+                  <h3>
+                    Plateforme de Visibilité pour les Jeunes Talents
+                  </h3>
+                  <br>
+                  <p>
+                    Ce partenariat ne se limite pas à un soutien matériel ; il crée également une véritable 
+                    plateforme de visibilité pour les jeunes talents. Il offre aux jeunes sportifs l'opportunité 
+                    de se faire remarquer, de perfectionner leurs compétences et de se préparer à une carrière 
+                    professionnelle dans le sport. De plus, cette initiative encourage l'engagement de la communauté 
+                    et favorise une culture sportive dynamique, renforçant ainsi les liens entre l'entreprise et la région.
+                  </p>
+              </div>
+          </div>
+          <div class="card-container" data-aos="fade-right" data-aos-delay="200" >
+              <div class="text-container" >
+                  
+                  <h3>
+                    Investissement dans l'Avenir Sportif
+                  </h3>
+                  <br>
+                  <p>
+                    En investissant dans le sport local, United Services réaffirme son rôle de leader engagé dans 
+                    le soutien aux initiatives locales et dans la promotion de l'excellence sportive, tout en 
+                    contribuant à l'émergence de futurs champions.
+                  </p>
+              </div>
+              <img src="img/Sponsors/3.jfif" >
+          </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
    
   <footer id="footer" class="footer">
     <div class="container footer-top">
