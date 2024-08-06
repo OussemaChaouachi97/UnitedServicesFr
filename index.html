@@ -26,12 +26,15 @@
 
   <!-- Main CSS File -->
   <link href="./assets/css/main.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Grey+Qo&family=Jersey+10+Charted&family=Jersey+25&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <style>
 
     .swiper-container {
@@ -112,8 +115,8 @@
                 <li class="dropdown"><a href="/index.html"><span>A propos de nous</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="">Qui Sommes Nous</a></li>
-                    <li><a href="#">Nos Références</a></li>
-                    <li><a href="#">Notre Réseau</a></li>
+                    <li><a href="#swiper-container">Nos Références</a></li>
+                    <li><a href="#map-container">Notre Réseau</a></li>
                   </ul>
                 </li>
                 <li class="dropdown"><a href="/CeQueNousFaisons\Services.html"><span>Nos Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -147,57 +150,107 @@
     
       </header>
   <br><br><br>
-  <div id="main-video-container" style="display: flex; justify-content: center; align-items: center; height: 100vh; padding: 0 500px; box-sizing: border-box;">
-        <video controls autoplay muted style="width: 100%; height: auto;">
-            <source src="vid/aaaa.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+  <br><br>
+
+    <section id="main-page">
+
+    <div id="main-video-container">
+        <div class="section-title">
+            <h2></h2>
+            <h1 data-aos="fade-up" data-aos-delay="100" >Bienvenue chez <span>United services</span></h1>
+            <br><br><br>
+            <p data-aos="fade-up" data-aos-delay="200">Votre partenaire de <b>confiance</b><br> pour tous vos besoins en services de <strong>catering!</strong></p>
+        </div>
+        <iframe width="460" height="260" src="https://www.youtube.com/embed/fMH5z8Uq1lE?autoplay=1&mute=1"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="image-wrapper">
+            <img src="/assets/img/bg/video-bg.jpg" class="img-fluid">
+        </div>
+
+
+
     </div>
-
-
+    <br><br><br>
+    <div class="title-container section-title" >
+        <h2></h2>
+        <p>Nos Références </p>
+        <h3 class="sectors-title">Secteur public </h3>
+    </div>
        <!-- Swiper -->
-       <div class="swiper-container">
+    <div class="swiper-container" id="swiper-container">
         <div class="swiper-wrapper">
             <!-- Repeat this block for each logo -->
-            <div class="swiper-slide"><img src="/assets\img\logos\EST_logo.png" alt="Logo 1"></div>
             <div class="swiper-slide"><img src="/assets\img\logos\logo-douane.png" alt="Logo 2"></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\1.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\2.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\3.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\EST_logo.png" alt="Logo 1"></div>
             <div class="swiper-slide"><img src="/assets\img\logos\4.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\5.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\6.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\7.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\8.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\9.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\10.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\11.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\12.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\13.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\15.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\16.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\17.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\18.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\19.png" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\20.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\21.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\22.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\23.jpg" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\24.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\25.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\26.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\27.jpg" ></div>
             <div class="swiper-slide"><img src="/assets\img\logos\28.webp" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\29.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\30.jpg" ></div>
+
+
+
 
 
             <!-- Add more logos as needed -->
         </div>
         <div class="hover-area hover-left"></div>
         <div class="hover-area hover-right"></div>
-      </div>
+    </div>
+    <div class="title-container section-title" >
 
+        <h3 class="sectors-title">Secteur médicale</h3>
+    </div>  
+
+    <div class="swiper-container" id="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/assets\img\logos\1.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\3.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\26.jpg" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\16.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\17.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\27.jpg" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\29.jpg" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\27.jpg" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\29.jpg" ></div>
+        </div>
+        <div class="hover-area hover-left"></div>
+        <div class="hover-area hover-right"></div>
+    </div>
+
+
+    <div class="title-container section-title" >
+
+        <h3 class="sectors-title">Secteur d'éducation </h3>
+    </div> 
+
+    <div class="swiper-container" id="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/assets\img\logos\2.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\10.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\11.jpg" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\12.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\13.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\25.jpg" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\30.jpg" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\21.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\22.png" ></div>
+            <div class="swiper-slide"><img src="/assets\img\logos\23.jpg" ></div>
+        </div>
+        <div class="hover-area hover-left"></div>
+        <div class="hover-area hover-right"></div>
+    </div>
+    <br><br><br><br><br>
+    <div class="title-container section-title" >
+        <h2></h2>
+        <p>Notre réseaux </p>
+    </div>
 
     <?xml version="1.0"?>
 <div id="name" >
@@ -1739,7 +1792,7 @@
     </svg>
 </div>
 <br>
-
+    </section>
   <footer id="footer" class="footer">
     <div class="container footer-top">
       <div class="row gy-4" style="margin-left: 5%; margin-right:10%;margin-top:-5%;">
@@ -1843,33 +1896,29 @@
         document.querySelector('.hover-right').addEventListener('click', function() {
             swiper.slideNext();
         });
-</script>
 
-</body>
+        document.querySelectorAll(".allPaths").forEach(e => {
+        e.setAttribute('class', `allPaths ${e.id}`);
+        e.addEventListener("mouseover", function () {
+            window.onmousemove = function (j) {
+                const x = j.clientX;
+                const y = j.clientY;
+                document.getElementById('name').style.top = (y - 60) + 'px';
+                document.getElementById('name').style.left = (x + 10) + 'px';
+            };
+            document.getElementById("name").style.opacity = 1;
+            document.getElementById("namep").innerText = e.id;
+            document.getElementById("namep").style.color = "rgb(0,0,0)";
+        });
 
-<script>
-document.querySelectorAll(".allPaths").forEach(e => {
-    e.setAttribute('class', `allPaths ${e.id}`);
-    e.addEventListener("mouseover", function () {
-        window.onmousemove = function (j) {
-            const x = j.clientX;
-            const y = j.clientY;
-            document.getElementById('name').style.top = (y - 60) + 'px';
-            document.getElementById('name').style.left = (x + 10) + 'px';
-        };
-        document.getElementById("name").style.opacity = 1;
-        document.getElementById("namep").innerText = e.id;
-        document.getElementById("namep").style.color = "rgb(0,0,0)";
-    });
+        e.addEventListener("mouseleave", function () {
+            document.getElementById("name").style.opacity = 0;
+        });
 
-    e.addEventListener("mouseleave", function () {
-        document.getElementById("name").style.opacity = 0;
-    });
-
-    e.addEventListener("click", function () {
-        getUser(e.id);
-    });
-});
+        e.addEventListener("click", function () {
+            getUser(e.id);
+        });
+        });
 
 
     </script>
@@ -1879,6 +1928,8 @@ document.querySelectorAll(".allPaths").forEach(e => {
         document.querySelector('.video-container video').addEventListener('click', function() {
             document.querySelector('.container').classList.add('hidden');
         });
+        
     </script>
+</body>
 
 </html>
