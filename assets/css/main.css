@@ -11,10 +11,13 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
-#ServicesCatering{
-  background-color: #141616;
-background-image: linear-gradient(135deg, #141616 0%, #4c4c4c 99%, #121211 100%);
+#body{
+  background: rgb(251,251,251);
+  background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(75,75,75,0.9948354341736695) 0%, rgba(0,0,0,1) 100%);
+}
 
+#map-container {
+  background-color: transparent ;
 }
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

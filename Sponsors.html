@@ -30,60 +30,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <!-- Custom CSS -->
-  <style>
-
-      .swiper-container {
-          width: 100%;
-          padding: 10px 0;
-          display: flex;  
-          background-color: white;  
-          -webkit-box-shadow: inset 0px 0px 33px 0px rgba(230,221,230,1);
-          -moz-box-shadow: inset 0px 0px 33px 0px rgba(230,221,230,1);
-          box-shadow: inset 0px 0px 33px 0px rgba(230,221,230,1);          
-         }
-
-      .swiper-wrapper{
-        background-color: white;
-        display: flex;
-        align-items: center;
-   
-      }
-
-      .swiper-slide {
-          display: flex;
-          justify-content: center;
-          justify-items: center;
-          align-items: center;
-      }
-      .swiper-slide img {
-          max-width: 150px; 
-          transition: filter 0.3s;
-      }
-      .swiper-slide img:hover {
-          filter: none;
-          transform: scale(1.8);
-          z-index: 9999;
-
-      }
-      .hover-area {
-            position: absolute;
-            top: 0;
-            width: 50px;
-            height: 100%;
-            z-index: 10;
-        }
-
-        .hover-left {
-            left: 0;
-        }
-
-        .hover-right {
-            right: 0;
-        }
-  </style>
+ 
 </head>
 
 <body class="index-page">
@@ -146,53 +95,9 @@
 
   </header>
   <br><br><br><br><br><br>
-  <br><br><br><br><br><br>
-  <br><br><br><br><br><br>
-  <br><br><br><br><br><br>
+  
 
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <!-- Repeat this block for each logo -->
-            <div class="swiper-slide"><img src="/assets\img\logos\EST_logo.png" alt="Logo 1"></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\logo-douane.png" alt="Logo 2"></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\1.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\2.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\3.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\4.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\5.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\6.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\7.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\8.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\9.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\10.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\11.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\12.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\13.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\15.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\16.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\17.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\18.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\19.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\20.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\21.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\22.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\23.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\24.png" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\25.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\26.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\27.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\28.webp" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\29.jpg" ></div>
-            <div class="swiper-slide"><img src="/assets\img\logos\30.jpg" ></div>
-
-
-            <!-- Add more logos as needed -->
-        </div>
-        <div class="hover-area hover-left"></div>
-        <div class="hover-area hover-right"></div>
-      </div>
-
+   
   <footer id="footer" class="footer">
     <div class="container footer-top">
       <div class="row gy-4" style="margin-left: 5%; margin-right:10%;margin-top:-5%;">
@@ -255,45 +160,7 @@
   <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 7,  /* Number of logos visible at the same time */
-        spaceBetween: 0, /* Space between logos */
-        loop: true, /* Loop the slides */
-        autoplay: {
-            delay: 0, /* Delay between transitions in ms */
-            disableOnInteraction: false, /* Continue autoplay after interactions */
-        },
-        speed: 3000, /* Transition speed in ms for smoother transitions */
-
-    });
-
-    document.querySelector('.swiper-container').addEventListener('mouseenter', function() {
-            swiper.autoplay.stop();
-        });
-
-        document.querySelector('.swiper-container').addEventListener('mouseleave', function() {
-            swiper.autoplay.start();
-        });
-        document.querySelector('.hover-left').addEventListener('mouseenter', function() {
-            swiper.slidePrev();
-        });
-
-        document.querySelector('.hover-right').addEventListener('mouseenter', function() {
-            swiper.slideNext();
-        });
-
-        document.querySelector('.hover-left').addEventListener('click', function() {
-            swiper.slidePrev();
-        });
-
-        document.querySelector('.hover-right').addEventListener('click', function() {
-            swiper.slideNext();
-        });
-</script>
+ 
   <!-- Main JS File -->
   <script src="../../assets/js/main.js"></script>
 
