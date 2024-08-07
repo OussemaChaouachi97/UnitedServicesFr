@@ -20,22 +20,29 @@
 
 }
 .text-container > p {
-    padding: 40px;
+    
     font-size: 1.1em;
+    margin-top: 40px;     
+    margin: 40px 20px 0px 0px;
+
 }
 
 .text-container > h3{
     margin-top: 30px;
-    padding: 5px;
+    
     text-decoration: double;
     color: #CDA45E;
     font-size: 2em;
+    margin: 40px 20px 0px 0px;
 
 
 }
 .text-container:nth-child(odd) > h3{
-    margin-left:20px ;
+    margin-left: 40px;  
 
+}
+.text-container:nth-child(odd) > p{
+    margin-left: 40px;   
 }
 
 #ServicesCatering{
