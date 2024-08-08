@@ -1836,6 +1836,23 @@
             disableOnInteraction: false, /* Continue autoplay after interactions */
         },
         speed: 3000, /* Transition speed in ms for smoother transitions */
+        breakpoints: {
+        320: {
+            slidesPerView: 2,  /* 2 logos visible on very small screens */
+        },
+        480: {
+            slidesPerView: 3,  /* 3 logos visible on small screens */
+        },
+        768: {
+            slidesPerView: 4,  /* 4 logos visible on tablets */
+        },
+        1024: {
+            slidesPerView: 5,  /* 5 logos visible on small desktops */
+        },
+        1200: {
+            slidesPerView: 7,  /* 7 logos visible on large desktops */
+        }
+    }
 
     });
 
