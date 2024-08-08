@@ -4836,8 +4836,8 @@ form .checkboxes-col .required-label {
 
 .home-graduate-parcours.section .image-animation-container.bottom-image-1 {
     width: 300px;
-    bottom: -40px;
-    left: 220px;
+    bottom: 110px;
+    left: 200px;
     z-index: 90
 }
 
@@ -4848,18 +4848,23 @@ form .checkboxes-col .required-label {
 @media (max-width: 767.98px) {
     .home-graduate-parcours.section .image-animation-container.bottom-image-1 {
         position:relative;
-        width: 40%;
-        bottom: inherit;
-        left: inherit;
-        right: 0;
-        margin-left: auto
+        width: 40vw;
+        justify-self: center;        
+    }
+}
+@media (max-width: 991.98px) {
+    .home-graduate-parcours.section .image-animation-container.bottom-image-1 {
+        position:relative;
+        width: 40vw;
+        margin-top: 100px;
+        justify-self: center;        
     }
 }
 
 .home-graduate-parcours.section .image-animation-container.bottom-image-2 {
     width: 445px;
-    bottom: -px;
-    left: -160px;
+    bottom: -70px;
+    left: -170px;
     z-index: 80
 }
 
