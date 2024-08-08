@@ -11,73 +11,111 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
-#main-page{
-background: rgb(3,3,3);
-background: linear-gradient(180deg, rgba(3,3,3,1) 0%, rgba(64,64,64,1) 40%, rgba(64,64,64,1) 61%, rgba(11,11,11,1) 100%);
-}
-#main-video-container{
-  height: 600px ;
+#main-video-container {
+  height: 60vh; /* 60% of viewport height */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
 
 .image-wrapper {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .image-wrapper::before {
   content: '';
   position: absolute;
-  top: 10px;
-  left: -20px;
-  bottom: unset;
+  top: 1vh; /* 1% of viewport height */
+  left: -2vw; /* 2% of viewport width */
   width: 100%;
-  height: 500px;
-  background-color: rgba(232, 148, 13, 0.2); /* Adjust the color and opacity as needed */
+  height: 50vh; /* 50% of viewport height */
+  background-color: rgba(232, 148, 13, 0.2);
   z-index: 1;
-  border-radius: 10px; /* Optional: for rounded corners */
+  border-radius: 10px;
 }
 
 #main-video-container img {
-  height:500px;
-
+  height: 50vh; /* 50% of viewport height */
+  max-width: 100%;
+  object-fit: cover;
 }
 
 #main-video-container iframe {
-  position:absolute;
-  bottom: 80px;
-  right: 380px;
+  position: absolute;
+  bottom: 8vh; /* 8% of viewport height */
+  right: 24vw; /* 38% of viewport width */
+  width: 32vw; /* 42% of viewport width */
+  height: 28vh; /* 24% of viewport height */
   z-index: 99;
 }
+
 #main-video-container h1 {
   text-decoration: double;
   color: #CDA45E;
-  font-size: 4.2em;
-  
+  font-size: 4.2vw; /* 4.2% of viewport width */
+  font-family: 'Josefin Sans', sans-serif;
 }
+
 #main-video-container p {
-  font-size: 2em;
+  font-size: 2vw; /* 2% of viewport width */
   color: #fff0d6;
-  font-family:Great Vibes ;
-  letter-spacing: 5px;
-  margin: 80px 25px ;
-
-}
-.title-container {
-  margin-left: 60px;
+  font-family: Great Vibes;
+  letter-spacing: 0.5vw; /* 0.5% of viewport width */
+  margin: 8vh 2.5vw; /* 8% of viewport height, 2.5% of viewport width */
 }
 
-.sectors-title{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  margin: 30px 30px 0px 0px ;
-  font-size: 2em;
-  
-}
-.title-container h3{
+@media (max-width: 768px) {
+  #main-video-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center; 
+  }
+  #main-video-container iframe {
+    position: relative;
+    width: 60vw; /* 80% of viewport width */
+    height: 60vh; /* 45% of viewport height */
+    margin-left: 40vw;
+  }
 
-  
+  #main-video-container img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-video-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center; 
+  }
+  #main-video-container h1 {
+    font-size: 10vw; /* 8% of viewport width */
+  }
+  #main-video-container p {
+    font-size: 4vw; /* 4% of viewport width */
+  }
+
+  #main-video-container iframe {
+    position: relative;
+  }
+    #main-video-container img {
+    display: none;
+  }
+}
+#reference-title{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.title-container{
+  margin-left: 5vw;
 }
 #map-container {
   background-color: transparent ;
