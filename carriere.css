@@ -43,7 +43,7 @@ b,strong {
     font-weight: bolder
 }
 .half-column .rte-content p,li,strong {
-    color:  #4a4a4a;
+    color:  #7a7979;
     
 }
 
@@ -3023,25 +3023,7 @@ svg *,svg g,svg path {
     }
 }
 
-.main-content:before {
-    content: '';
-    position: absolute;
-    z-index: -100;
-    display: block;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 52vw 52vw 0;
-    border-color: transparent #f6f6f6 transparent transparent
-}
 
-@media (max-width: 767.98px) {
-    .main-content:before {
-        border-width:0 100vw 100vw 0
-    }
-}
 
 .main-content .section {
     padding-top: 100px;
@@ -4419,7 +4401,7 @@ form .checkboxes-col .required-label {
 
 .section.home-intro {
     position: relative;
-    padding-bottom: 0
+    padding-bottom: 200px;
 }
 
 @media (max-width: 767.98px) {
@@ -4830,7 +4812,7 @@ form .checkboxes-col .required-label {
     width: 96px;
     position: absolute;
     bottom: 0;
-    left: 390px;
+    right: 200px;
     z-index: 100
 }
 
@@ -4853,8 +4835,8 @@ form .checkboxes-col .required-label {
 }
 
 .home-graduate-parcours.section .image-animation-container.bottom-image-1 {
-    width: 200px;
-    bottom: -125px;
+    width: 300px;
+    bottom: -40px;
     left: 220px;
     z-index: 90
 }
@@ -4876,14 +4858,16 @@ form .checkboxes-col .required-label {
 
 .home-graduate-parcours.section .image-animation-container.bottom-image-2 {
     width: 445px;
-    bottom: -190px;
+    bottom: -px;
     left: -160px;
     z-index: 80
 }
 
 @media (min-width: 768px) and (max-width:991.98px) {
     .home-graduate-parcours.section .image-animation-container.bottom-image-2 {
-        bottom:-40px
+        bottom:-10px;
+        display:none
+
     }
 }
 
@@ -4892,7 +4876,9 @@ form .checkboxes-col .required-label {
         width:75%;
         bottom: 0;
         right: inherit;
-        left: 0
+        left: 0;
+        display:none
+
     }
 }
 

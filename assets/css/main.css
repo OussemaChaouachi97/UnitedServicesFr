@@ -204,7 +204,7 @@ svg path {
   --background-color: rgba(14, 14, 13, 0.69);
   color: var(--default-color);
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 1000;
 }
 
 .header .topbar {
