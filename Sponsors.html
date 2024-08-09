@@ -36,41 +36,62 @@
   .card-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
     margin: 150px 0px 150px 0px;
     position: relative;
+    padding: 50px;
     
     background-color: #1e1e1e; /* Dark grey for contrast */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     overflow: hidden; /* Ensures content doesn't overflow the rounded corners */
-}
-.card-container:first-child{
-    margin: 50px 0px 150px 0px;
 
 }
-.card-container > img {
+.card-container .text-container:nth-child(even){
+  margin-left: 50px;
+}
+@media (max-width:1200px) {
+  .card-container .text-container:nth-child(even){
+  margin: unset;
+  }
+}
+
+.card-container  img {
     width: 400px;
     height: auto;
-    margin: 30px;
 
 }
 .text-container > p {
-    padding: 40px;
     font-size: 1.1em;
 }
 
 .text-container > h3{
-    margin-top: 30px;
-    padding: 5px;
     text-decoration: double;
     color: #CDA45E;
     font-size: 2em;
-
-
 }
-.text-container:nth-child(odd) > h3{
-    margin-left:20px ;
 
+@media (max-width:1200px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .card-container img {
+    padding: unset;
+  }
+  .item-1 {
+    order: 3; /* Move item 1 to the last position */
+  }
+  .item-2 {
+    order: 1; /* Move item 2 to the first position */
+  }
+  .item-3 {
+    order: 2; /* Move item 3 to the second position */
+  }
 }
 
 #ServicesCatering{
@@ -85,19 +106,9 @@ background-image: linear-gradient(135deg, #141616 0%, #4c4c4c 99%, #121211 100%)
 
   <header id="header" class="header fixed-top">
 
-    <div class="topbar d-flex align-items-center">
-      <!--<div class="container d-flex justify-content-center justify-content-md-between" >
-        <div class="languages d-none d-md-flex align-items-center">
-          <ul>
-            <li>Fr</li>
-            <li><a href="UnitedServices/En/">En</a></li>
-          </ul>
-        </div>-->
-      </div>
-    </div><!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
-      <div class="container position-relative d-flex align-items-center justify-content-between" style="padding: 0 80px;">
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between" >
         <a href="index.html"  class="d-flex align-items-center me-auto me-xl-0">
           <img src="img/logo.png"   alt="Company Logo">
         </a>
@@ -140,7 +151,7 @@ background-image: linear-gradient(135deg, #141616 0%, #4c4c4c 99%, #121211 100%)
     </div>
 
   </header>
-  <br><br><br><br><br>
+  <br><br><br>
   <section id="ServicesCatering">
   <!-- Gallery Section -->
   <section  style="background-color: transparent;" >
@@ -151,8 +162,8 @@ background-image: linear-gradient(135deg, #141616 0%, #4c4c4c 99%, #121211 100%)
       <p>United Services et le Club Sportif Oued Ellil (CSO) </p>
     </div><!-- End Section Title -->
 
-          <div style="margin-right: 200px; margin-left: 200px;">
-              <img src="img/Sponsors/1.jfif" alt="le Club Sportif Oued Ellil" class="img-fluid" >
+          <div class="d-flex align-items-center justify-content-center ">
+              <img style=" width:80vw " src="img/Sponsors/1.jfif" alt="le Club Sportif Oued Ellil" class="img-fluid" >
             </a>
           </div><!-- End Gallery Item -->
 
@@ -182,15 +193,15 @@ background-image: linear-gradient(135deg, #141616 0%, #4c4c4c 99%, #121211 100%)
               <img src="img/Sponsors/4.jfif" style=" padding: 30px; padding-top: 60px;" >
           </div>
           <div class="card-container" data-aos="fade-left" data-aos-delay="200">
-              <img src="img/Sponsors/2.jfif" style="padding: 20px; padding-top: 60px; padding-bottom: 50px;">
+              <img class="item-3" src="img/Sponsors/2.jfif" >
               <div class="text-container">
                   
-                  <h3>
+                  <h3 class="item-1">
                     Plateforme de Visibilité pour les Jeunes Talents
                   </h3>
                   <br>
-                  <p>
-                    Ce partenariat ne se limite pas à un soutien matériel ; il crée également une véritable 
+                  <p class="item-2">
+                    Ce partenariat ne se limite pas à un soutien matériel : il crée également une véritable 
                     plateforme de visibilité pour les jeunes talents. Il offre aux jeunes sportifs l'opportunité 
                     de se faire remarquer, de perfectionner leurs compétences et de se préparer à une carrière 
                     professionnelle dans le sport. De plus, cette initiative encourage l'engagement de la communauté 
