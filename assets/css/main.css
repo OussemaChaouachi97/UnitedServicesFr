@@ -1,9 +1,79 @@
 
+#introduction-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  
+}
 
+#introduction-container strong{
+  color: #777777;
+}
+#introduction-container .key-words{
+  color: #ac8a50;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+#introduction-container p{
+  text-align: center;
+  font-family: var(--nav-font);
+  font-size: 1.4rem;
+  
+}
 
+@media (max-width: 1200px) {
+  #introduction-container p {
+    font-size: 1rem;
+  }
+  #introduction-container .key-words{
+    font-size: 1.2rem;
+  }
+}
 
+@media (max-width: 768px) {
+  #introduction-container p {
+    font-size: 0.9rem;
+  }
+  #introduction-container .key-words{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #introduction-container p {
+    font-size: 0.8rem;
+  }
+}
+#introduction-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  position: relative;
+}
+#introduction-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 80vw;
+  height: 60vh;
+  border: 0.3vw solid #ac8a50; /* Use a dark brown color for a wood-like effect */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 #main-video-container {
-  height: 80vh; /* 60% of viewport height */
+  height: 80vh; 
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -19,17 +89,17 @@
 .image-wrapper::before {
   content: '';
   position: absolute;
-  top: 1vh; /* 1% of viewport height */
-  left: -2vw; /* 2% of viewport width */
+  top: 1vh; 
+  left: -2vw; 
   width: 100%;
-  height: 50vh; /* 50% of viewport height */
+  height: 50vh; 
   background-color: rgba(232, 148, 13, 0.2);
   z-index: 1;
   border-radius: 10px;
 }
 
 #main-video-container img {
-  height: 50vh; /* 50% of viewport height */
+  height: 50vh; 
   max-width: 100%;
   object-fit: cover;
 }
