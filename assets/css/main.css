@@ -1,18 +1,79 @@
-/**
-* Template Name: Restaurantly
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Updated: Jun 14 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
+#introduction-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  
+}
+
+#introduction-container strong{
+  color: #777777;
+}
+#introduction-container .key-words{
+  color: #ac8a50;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+#introduction-container p{
+  text-align: center;
+  font-family: var(--nav-font);
+  font-size: 1.4rem;
+  
+}
+
+@media (max-width: 1200px) {
+  #introduction-container p {
+    font-size: 1rem;
+  }
+  #introduction-container .key-words{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #introduction-container p {
+    font-size: 0.9rem;
+  }
+  #introduction-container .key-words{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #introduction-container p {
+    font-size: 0.8rem;
+  }
+}
+#introduction-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  position: relative;
+}
+#introduction-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 80vw;
+  height: 60vh;
+  border: 0.3vw solid #ac8a50; /* Use a dark brown color for a wood-like effect */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 #main-video-container {
-  height: 60vh; /* 60% of viewport height */
+  height: 80vh; 
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -28,17 +89,17 @@
 .image-wrapper::before {
   content: '';
   position: absolute;
-  top: 1vh; /* 1% of viewport height */
-  left: -2vw; /* 2% of viewport width */
+  top: 1vh; 
+  left: -2vw; 
   width: 100%;
-  height: 50vh; /* 50% of viewport height */
+  height: 50vh; 
   background-color: rgba(232, 148, 13, 0.2);
   z-index: 1;
   border-radius: 10px;
 }
 
 #main-video-container img {
-  height: 50vh; /* 50% of viewport height */
+  height: 50vh; 
   max-width: 100%;
   object-fit: cover;
 }
@@ -1950,4 +2011,166 @@ header{
   -webkit-box-shadow: 10px 10px 13px 0px rgba(125, 125, 125, 0.75);
   -moz-box-shadow: 10px 10px 13px 0px rgba(189,189,189,0.75);
 position: sticky;
+}
+
+
+.custom-img-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+.custom-background.bkg-grey {
+  background-color: #fdfdfc !important;
+}
+.full-screen.custom-img-background {
+  padding-top: 0;
+}
+.full-screen-content-wrapper {
+  display: table;
+  width: 100%;
+  padding: 0 30px;
+  background-repeat: no-repeat;
+}
+.full-screen-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.bkg-img-right {
+  background-position: right 60px top;  
+  background-repeat: no-repeat;
+}
+.bkg-img-left {
+  background-position: left 60px top; 
+  background-repeat: no-repeat;
+}
+.bkg-img-left-vertical-center {
+  background-repeat: no-repeat;
+  background-position: 15px center; 
+}
+.bkg-img-contain {
+  background-repeat: no-repeat;
+  background-size: contain;  
+}
+.bkg-img {
+  background-image: url('../img/pics/test-bg.png');  
+}
+
+.bkg-img1 {
+  background-image: url('../img/pics/bkg-img1.jpg');  
+}
+
+.bkg-img2 {
+  background-image: url('../img/pics/bkg-img2.png');  
+}
+.bkg-img-quality {
+  background-image: url('../img/pics/quality.jpg');  
+}
+
+.bkg-img3 {
+  background-image: url('../img/pics/bkg-img3.jpg');  
+}
+.bkg-img4 {
+  background-image: url('../img/pics/bkg-img4.jpg');  
+}
+.bkg-img5 {
+  background-image: url('../img/pics/bkg-img5.jpg');  
+}
+.bkg-img6 {
+  background-image: url('../img/pics/bkg-img6.jpg');  
+}
+.bkg-img7 {
+  background-image: url('../img/pics/page-title-6.jpg');  
+}
+.bkg-img8 {
+  background-image: url('../img/pics/bkg-img8.jpg');  
+}
+.bkg-img9 {
+  background-image: url('../img/pics/bkg-img9.png');  
+}
+.bkg-img10 {
+  background-image: url('../img/pics/bkg-img10.jpg');  
+}
+.bkg-img11 {
+  background-image: url('../img/pics/bkg-img11.jpg');  
+}
+.bkg-img12 {
+  background-image: url('../img/pics/bkg-img12.jpg');  
+}
+.bkg-img13 {
+  background-image: url('../img/pics/bkg-img13.jpg');  
+}
+.bkg-img14 {
+  background-image: url('../img/pics/bkg-img14.png');  
+}
+.bkg-img15 {
+  background-image: url('../img/pics/bkg-img15.jpg');  
+}
+.bkg-img16 {
+  background-image: url('../img/pics/bkg-img16.jpg');  
+}
+.bkg-img17 {
+  background-image: url('../img/pics/bkg-img17.jpg');  
+}
+.bkg-img18 {
+  background-image: url('../img/pics/bkg-img18.jpg');  
+}
+.bkg-img19 {
+  background-image: url('../img/pics/bkg-img19.jpg');  
+}
+.bkg-img20 {
+  background-image: url('../img/pics/bkg-img20.jpg');  
+}
+.bkg-img21 {
+  background-image: url('../img/pics/bkg-img21.jpg');  
+}
+.locations-column-background-image {
+  background-image: url('../img/pics/locations-column-background-image.jpg');  
+}
+
+#intro-content{
+  background: wheat;
+  background-image: url('img/pics/bkg-img2');  
+  background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 100px 0;
+
+}
+#intro-text  h3 {
+    color: #282622;
+    font-weight: 600;
+    font-size: 5rem;
+    font-family: 'Montez', cursive;
+    text-transform: none;
+}
+#intro-text  .frame-box {
+  background-color: #fff;
+  border: 17px solid #9f8314;
+  padding: 125px 80px;
+  box-shadow: 0 0 18px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 18px 7px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 18px 7px rgba(0,0,0,0.3);
+}
+#intro-text .custom-img-background.frame-box {
+  background-size: 100%;
+  background-position: center;
+}
+#intro-text  .frame-box .custom-heading {
+  padding-left: 0 !important;
+}
+#intro-text .frame-box.custom-img-background .custom-heading {
+  margin-bottom: 50px;
+}
+
+#intro-text p,a {
+    color: #777777; 
+    font-size: large;
+}
+
+
+
+.custom-heading.style-1 span,
+.custom-heading.style-2 span,
+.menu-item-price p{
+    font-family: 'Montez', cursive;
+    text-transform: none;
 }
