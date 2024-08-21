@@ -54,7 +54,7 @@
   align-content: center;
   align-items: center;
   width: 80vw;
-  height: 60vh;
+  height: 80vh;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   position: relative;
 }
@@ -120,11 +120,15 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+#main-video-container strong {
+  color: #CDA45E;
+}
+
 #main-video-container p:first-of-type {
-  font-size: 2vw; /* 2% of viewport width */
+  font-size: 1.2vw; /* 2% of viewport width */
   color: #fff0d6;
-  font-family: Great Vibes;
-  letter-spacing: 0.2vw; /* 0.5% of viewport width */
+  font-family: var(--nav-font);
+  letter-spacing: 0.3vw; /* 0.5% of viewport width */
   margin: 1vh 2.5vw; /* 8% of viewport height, 2.5% of viewport width */
 }
 
