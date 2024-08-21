@@ -1,7 +1,7 @@
 .gif-container1 {
     width: 200px; /* adjust to your GIF size */
     height: 200px; /* adjust to your GIF size */
-    background-image: url('/assets/img/cleaning-static.png'); /* path to the static image */
+    background-image: url('../../assets/img/cleaning-static.png'); /* path to the static image */
     background-size: cover;
     background-position: center;
     position: relative;
