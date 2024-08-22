@@ -2154,7 +2154,7 @@ position: sticky;
 }
 
 #intro-text p,a {
-    color: #777777; 
+   /* color: #777777;*/ 
     font-size: large;
 }
 
